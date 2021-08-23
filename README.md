@@ -14,4 +14,8 @@ Fix it by these commands:
 modprobe ipmi_si
 modprobe acpi_ipmi
 modprobe acpi_power_meter
+echo ipmi_si | sudo tee -a /etc/modules
+echo acpi_ipmi | sudo tee -a /etc/modules
+echo acpi_power_meter | sudo tee -a /etc/modules
+reboot now
 ```
